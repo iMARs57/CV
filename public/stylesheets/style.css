@@ -41,19 +41,79 @@ hr {
   margin-bottom: 2em;
 }
 
-header {
-  background-color: #999;
-  background-image: url(../images/background.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-bottom: 4em;
-  text-align: center;
-  height: 500px;
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255,255,255,0.7);
+}
 
+.nav_inner{
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+nav ul li{
+    display: none;
+    float:left;
+    list-style-type:none;
+    margin: 0 10px 0 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+nav ul li:last-child{
+    float: right;
+    display: block;
+}
+
+nav ul li a{
+    color: #666666;
+}
+
+header {
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: #999;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 4em;
+    text-align: center;
+    height: 500px;
+
+}
+
+header .vertical{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .inner{
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thumbnail img{
+    display: block;
+    max-height: 100px;
+    width: auto;
+    margin: 0 auto;
+    line-height: 0;
+    border-radius: 50%;
+    border: 0;
 }
 
 header h1 {
@@ -64,18 +124,16 @@ header h1 {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
   position: relative;
-  top: 370px;
   font-weight: 700;
 }
 
 header p {
   color: #fff;
   font-size: 1.1em;
-  padding-bottom: 1.3em;
+  /*padding-bottom: 1.3em;*/
   padding-top: .5em;
   opacity: .9;
   position: relative;
-  top: 360px;
 }
 
 header a{
@@ -84,7 +142,12 @@ header a{
 
 header a:focus,
 header a:hover {
-  color: #6594e0;
+  color: #e06158;
+}
+
+section{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section h1 {
@@ -116,17 +179,18 @@ footer hr {
 
 @media screen and (min-width: 50em) {
   header {
-    height: 700px;
+    margin-bottom: 5rem;
   }
 
   header h1 {
     font-size: 3.2em;
-    top: 540px;
   }
 
   header p {
-    top: 530px;
     font-size: 1.5em;
+  }
+  nav ul li{
+      display: block;
   }
 }
 

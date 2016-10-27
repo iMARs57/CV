@@ -34,4 +34,18 @@ $(function() {
         fillColor: '#3c3a3d',
     });
 
+    $('.a_nav').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top - 50
+        }, 500);
+        return false;
+    });
+
+    $('#a_home').click(function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
 });

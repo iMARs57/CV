@@ -17,12 +17,30 @@
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
+	<nav class="fixed-nav-bar">
+		<div class="nav_inner">
+			<ul>
+	  			<li><a class="a_nav" href="#projects">Projects</a></li>
+	  			<li><a class="a_nav" href="#education">Education</a></li>
+	  			<li><a class="a_nav" href="#experience">Experience</a></li>
+	  			<li><a class="a_nav" href="#skills">Skills</a></li>
+				<li><a id="a_home" href="#">Shao-Chi, Chen</a></li>
+	  		</ul>
+		</div>
+	</nav>
 	<!-- Header-->
 	<header>
-		<h1>Shao-Chi (Auberon) Chen</h1>
-		<p>
-			<a href="mailto:ar.chen57@gmail.com">ar.chen57@gmail.com</a>
-		</p>
+		<div class="vertical">
+			<div class="inner">
+            	<a class="thumbnail" href="/">
+					<img src="images/thumbnail.jpg" alt="thumbnail">
+				</a>
+				<h1>Shao-Chi (Auberon) Chen</h1>
+				<p>
+					<a href="mailto:ar.chen57@gmail.com">ar.chen57@gmail.com</a>
+				</p>
+			</div>
+		</div>
 	</header>
 	<div class="container">
 		<!-- Introduction-->
@@ -83,9 +101,9 @@
 	</div> <!-- End container-->
 
 	<!-- Spotlight -->
-	<section class="spotlight">
-		<h1>Projects</h1>
+	<section class="spotlight" id="projects">
 		<div class="container">
+			<h1>Projects</h1>
 			<div class="row">
 				<div class="grid-3">
 					<img src="images/blackandorange.png" style="width:100%; margin-top:5%">
@@ -192,7 +210,7 @@
 	<!-- New container-->
 	<div class="container">
 
-		<section class="education">
+		<section class="education" id="education">
 			<h1>Education</h1>
 			<div class="row">
 				<div class="grid-2">
@@ -259,7 +277,7 @@
 		<hr>
 
 		<!--Experience Tables-->
-		<section class="experience">
+		<section class="experience" id="experience">
 			<h1>Experience</h1>
 			<div class="row">
 				<div class="grid-2">
@@ -318,7 +336,7 @@
 
 		<hr>
 
-		<section class="skill">
+		<section class="skill" id="skills">
 			<!--List of skills-->
 			<h1>Skills</h1>
 			<div class="row">
